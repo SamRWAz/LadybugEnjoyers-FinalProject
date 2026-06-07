@@ -1,0 +1,12 @@
+{
+  "total_images": 2400,
+  "by_quality": {
+    "Buena": 800,
+    "Mala": 800,
+    "Regular": 800
+  },
+  "by_source": {
+    "kaggle": 2400
+  },
+  "fruit_types": 7
+}
