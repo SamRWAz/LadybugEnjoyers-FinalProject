@@ -1,0 +1,46 @@
+project:
+  name: "LadybugEnjoyers - Clasificación de Calidad de Frutas"
+  team: "LadybugEnjoyers"
+  course: "Algoritmos y Programación III - 2026-1"
+  members:
+    - name: "Samuel Alejandro Domínguez Burbano"
+      code: "A00399314"
+
+labels:
+  quality:
+    Mala: 0
+    Buena: 1
+  quality_en:
+    bad: Mala
+    mixed: Mala
+    good: Buena
+
+paths:
+  kaggle_dataset: null  # se resuelve automáticamente con kagglehub
+  custom_images: "data/custom/images"
+  custom_annotations: "data/custom/annotations.csv"
+  processed_manifest: "data/processed/manifest.csv"
+  processed_splits: "data/processed/splits"
+  experiments: "experiments"
+  checkpoints: "experiments/checkpoints"
+  results: "experiments/results"
+
+data:
+  image_size: 128
+  max_samples_per_class: 800  # null para usar todo el dataset (~19k imágenes)
+  test_size: 0.15
+  val_size: 0.15
+  random_state: 42
+
+models:
+  ml:
+    - random_forest
+    - svm
+  dl:
+    - cnn
+
+training:
+  cnn_epochs: 15
+  cnn_batch_size: 32
+  cnn_lr: 0.001
+  cv_folds: 3

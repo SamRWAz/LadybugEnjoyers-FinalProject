@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos (no subir imágenes pesadas)
+data/raw/
+data/processed/
+data/custom/**/*.jpg
+data/custom/**/*.jpeg
+data/custom/**/*.png
+*.zip
+
+# Experimentos y modelos
+experiments/checkpoints/
+experiments/logs/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml

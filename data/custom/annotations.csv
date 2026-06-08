@@ -1,0 +1,25 @@
+filename,quality,fruit_type,notes
+banana_buena_02.png,Buena,Banano,Sin defectos visibles
+banana_buena_08.png,Buena,Banano,Sin defectos visibles
+banana_buena_11.png,Buena,Banano,Sin defectos visibles
+banana_mala_15.png,Mala,Banano,Manchas y golpes
+banana_mala_22.png,Mala,Banano,Podredumbre parcial
+banana_mala_23.png,Mala,Banano,Defectos severos
+mandarina_buena_03.png,Buena,Mandarina,Color uniforme
+mandarina_mala_13.png,Mala,Mandarina,Manchas oscuras
+mandarina_mala_20.png,Mala,Mandarina,Piel dañada
+mandarina_mala_21.png,Mala,Mandarina,Golpes visibles
+mango_buena_04.png,Buena,Mango,Madurez adecuada
+mango_buena_09.png,Buena,Mango,Color homogéneo
+mango_buena_12.png,Buena,Mango,Sin manchas
+mango_mala_16.png,Mala,Mango,Manchas negras
+mango_mala_18.png,Mala,Mango,Golpes y abolladuras
+manzana_buena_01.png,Buena,Manzana,Fondo blanco uniforme
+manzana_buena_05.png,Buena,Manzana,Color rojo uniforme
+manzana_buena_06.png,Buena,Manzana,Sin defectos
+manzana_buena_07.png,Buena,Manzana,Forma regular
+manzana_buena_10.png,Buena,Manzana,Superficie lisa
+manzana_mala_14.png,Mala,Manzana,Golpes visibles
+manzana_mala_17.png,Mala,Manzana,Manchas marrones
+manzana_mala_19.png,Mala,Manzana,Podredumbre incipiente
+manzana_mala_24.png,Mala,Manzana,Defectos múltiples
