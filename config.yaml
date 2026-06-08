@@ -9,11 +9,10 @@ project:
 labels:
   quality:
     Mala: 0
-    Regular: 1
-    Buena: 2
+    Buena: 1
   quality_en:
     bad: Mala
-    mixed: Regular
+    mixed: Mala
     good: Buena
 
 paths:

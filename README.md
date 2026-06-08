@@ -2,7 +2,7 @@
 
 Proyecto final **Algoritmos y Programación III (2026-1)** — Universidad Icesi.
 
-Sistema de visión por computadora que clasifica frutas en **Buena / Regular / Mala** y estima el **tamaño en píxeles** (diámetro equivalente normalizado).
+Sistema de visión por computadora que clasifica frutas en **Buena / Mala** y estima el **tamaño en píxeles** (diámetro equivalente normalizado).
 
 ## Integrantes
 
@@ -60,20 +60,22 @@ python -m src.evaluation.eda
 python -m streamlit run app/streamlit_app.py
 ```
 
-## Fotos propias (30–50 imágenes)
+## Fotos propias (24 imágenes capturadas)
 
 1. Guardar fotos en `data/custom/images/`
 2. Anotar en `data/custom/annotations.csv` (columnas: `filename`, `quality`, `fruit_type`, `notes`)
 3. Ejecutar `python -m src.main --step all`
 
+**Estado actual:** 24 fotos (manzana, mango, mandarina, banano) — 12 Buena / 12 Mala.
+
 ## Dataset de referencia
 
 [Fruit Quality Classification — Kaggle](https://www.kaggle.com/datasets/ryandpark/fruit-quality-classification)
 
-Mapeo de etiquetas:
+Mapeo de etiquetas (clasificación binaria):
 - `Good Quality_Fruits` → **Buena**
-- `Mixed Qualit_Fruits` → **Regular**
 - `Bad Quality_Fruits` → **Mala**
+- `Mixed Qualit_Fruits` → **Mala**
 
 ## Estructura del repositorio
 

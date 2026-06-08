@@ -25,7 +25,6 @@ st.set_page_config(
 
 QUALITY_COLORS = {
     "Buena": "#2ecc71",
-    "Regular": "#f39c12",
     "Mala": "#e74c3c",
 }
 
@@ -44,7 +43,7 @@ def main() -> None:
     st.title("🍎 Sistema de Clasificación de Calidad de Frutas")
     st.markdown(
         "**LadybugEnjoyers** — Proyecto Final APO III (2026-1)  \n"
-        "Clasifica la calidad (**Buena / Regular / Mala**) y estima el tamaño en píxeles."
+        "Clasifica la calidad (**Buena / Mala**) y estima el tamaño en píxeles."
     )
 
     ckpt_dir = ROOT / "experiments" / "checkpoints"
@@ -67,7 +66,7 @@ def main() -> None:
     with col_cfg:
         model_name = st.selectbox("Modelo", available, format_func=lambda x: x.upper().replace("_", " "))
         st.info(
-            "**Categorías:** Buena · Regular · Mala  \n"
+            "**Categorías:** Buena · Mala  \n"
             "**Tamaño:** diámetro equivalente normalizado y en píxeles aproximados."
         )
 

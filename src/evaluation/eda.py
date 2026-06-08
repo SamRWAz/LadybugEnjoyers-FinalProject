@@ -20,8 +20,8 @@ def run_eda(config: dict | None = None) -> None:
     manifest = pd.read_csv(ROOT_DIR / config["paths"]["processed_manifest"])
 
     plt.figure(figsize=(8, 5))
-    order = ["Mala", "Regular", "Buena"]
-    sns.countplot(data=manifest, x="quality", order=order, palette=["#e74c3c", "#f39c12", "#2ecc71"])
+    order = ["Mala", "Buena"]
+    sns.countplot(data=manifest, x="quality", order=order, palette=["#e74c3c", "#2ecc71"])
     plt.title("Distribución de clases de calidad")
     plt.xlabel("Calidad")
     plt.ylabel("Cantidad")
@@ -39,7 +39,7 @@ def run_eda(config: dict | None = None) -> None:
 
     if "diameter_norm" in manifest.columns:
         plt.figure(figsize=(8, 5))
-        sns.boxplot(data=manifest, x="quality", y="diameter_norm", order=order, palette=["#e74c3c", "#f39c12", "#2ecc71"])
+        sns.boxplot(data=manifest, x="quality", y="diameter_norm", order=order, palette=["#e74c3c", "#2ecc71"])
         plt.title("Tamaño normalizado (diámetro) por calidad")
         plt.xlabel("Calidad")
         plt.ylabel("Diámetro normalizado")

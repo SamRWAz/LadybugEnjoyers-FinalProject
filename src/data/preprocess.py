@@ -19,7 +19,7 @@ IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 FOLDER_TO_QUALITY = {
     "Bad Quality_Fruits": "Mala",
     "Good Quality_Fruits": "Buena",
-    "Mixed Qualit_Fruits": "Regular",
+    "Mixed Qualit_Fruits": "Mala",
 }
 
 
@@ -68,7 +68,7 @@ def _load_custom_records(custom_dir: Path, annotations_path: Path) -> list[dict]
                 records.append(
                     {
                         "path": str(path),
-                        "quality": "Regular",
+                        "quality": "Mala",
                         "fruit_type": "Custom",
                         "source": "custom_unlabeled",
                     }
@@ -92,14 +92,17 @@ def build_manifest(config: dict | None = None, compute_size: bool = True) -> pd.
 
     max_per_class = config["data"].get("max_samples_per_class")
     if max_per_class:
-        df = (
-            df.groupby("quality", group_keys=False)
-            .apply(
-                lambda g: g.sample(n=min(len(g), max_per_class), random_state=config["data"]["random_state"]),
-                include_groups=False,
+        kaggle_df = df[df["source"] == "kaggle"]
+        custom_df = df[df["source"] == "custom"]
+        sampled = []
+        for _, group in kaggle_df.groupby("quality"):
+            sampled.append(
+                group.sample(
+                    n=min(len(group), max_per_class),
+                    random_state=config["data"]["random_state"],
+                )
             )
-            .reset_index(drop=True)
-        )
+        df = pd.concat([pd.concat(sampled, ignore_index=True), custom_df], ignore_index=True)
 
     if compute_size:
         diameters = []

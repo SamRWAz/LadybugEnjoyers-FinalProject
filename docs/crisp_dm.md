@@ -27,7 +27,7 @@ flowchart TD
 Clasificar manualmente frutas en mercados es lento y subjetivo. Un sistema automático reduce desperdicio y estandariza la calidad comercial.
 
 ### 2. Comprensión de datos
-Dataset Kaggle (~19k imágenes) + fotos propias del grupo. Análisis de balance entre Buena/Regular/Mala y variabilidad de tamaño.
+Dataset Kaggle (~19k imágenes) + fotos propias del grupo. Análisis de balance entre **Buena/Mala** y variabilidad de tamaño.
 
 ### 3. Preparación de datos
 - Manifiesto unificado (`data/processed/manifest.csv`)

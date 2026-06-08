@@ -1,8 +1,8 @@
 # Fotos propias del grupo
 
-> **Estado (jun 2026):** carpeta y plantilla de anotaciones preparadas por Samuel Alejandro Domínguez Burbano (A00399314). Las imágenes reales se subirán en breve; ver `annotations.csv` con filas de ejemplo.
+> **Estado (jun 2026):** 24 fotos capturadas por Samuel Alejandro Domínguez Burbano (A00399314) — 12 Buena / 12 Mala. Tipos: manzana, mango, mandarina, banano.
 
-Coloca aquí entre **30 y 50 imágenes** de frutas reales.
+Coloca aquí imágenes de frutas reales (objetivo: 30–50).
 
 ## Requisitos de captura
 - Una fruta por foto
@@ -19,7 +19,7 @@ mi_foto_02.jpg,Regular,Naranja,Manchas leves
 mi_foto_03.jpg,Mala,Banano,Podredumbre visible
 ```
 
-**Categorías válidas:** `Buena`, `Regular`, `Mala`
+**Categorías válidas:** `Buena`, `Mala`
 
 Después de agregar fotos, vuelve a ejecutar:
 ```bash

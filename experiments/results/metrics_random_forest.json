@@ -2,45 +2,39 @@
   "model": "random_forest",
   "best_params": {
     "clf__max_depth": null,
-    "clf__n_estimators": 200
+    "clf__n_estimators": 100
   },
-  "cv_f1_weighted_mean": 0.8292657408195039,
-  "cv_f1_weighted_std": 0.008964667127770602,
-  "val_accuracy": 0.8444444444444444,
-  "val_f1_weighted": 0.8444729039766887,
-  "test_accuracy": 0.85,
-  "test_f1_weighted": 0.8499516517808221,
+  "cv_f1_weighted_mean": 0.8369812332073843,
+  "cv_f1_weighted_std": 0.00874908241056071,
+  "val_accuracy": 0.8032786885245902,
+  "val_f1_weighted": 0.8024291497975709,
+  "test_accuracy": 0.8278688524590164,
+  "test_f1_weighted": 0.8278572868373312,
   "classification_report": {
     "Mala": {
-      "precision": 0.8793103448275862,
-      "recall": 0.85,
-      "f1-score": 0.864406779661017,
-      "support": 120.0
-    },
-    "Regular": {
-      "precision": 0.8217054263565892,
-      "recall": 0.8833333333333333,
-      "f1-score": 0.8514056224899599,
-      "support": 120.0
+      "precision": 0.8333333333333334,
+      "recall": 0.819672131147541,
+      "f1-score": 0.8264462809917356,
+      "support": 122.0
     },
     "Buena": {
-      "precision": 0.8521739130434782,
-      "recall": 0.8166666666666667,
-      "f1-score": 0.8340425531914893,
-      "support": 120.0
+      "precision": 0.8225806451612904,
+      "recall": 0.8360655737704918,
+      "f1-score": 0.8292682926829268,
+      "support": 122.0
     },
-    "accuracy": 0.85,
+    "accuracy": 0.8278688524590164,
     "macro avg": {
-      "precision": 0.8510632280758846,
-      "recall": 0.85,
-      "f1-score": 0.8499516517808221,
-      "support": 360.0
+      "precision": 0.8279569892473119,
+      "recall": 0.8278688524590164,
+      "f1-score": 0.8278572868373312,
+      "support": 244.0
     },
     "weighted avg": {
-      "precision": 0.8510632280758846,
-      "recall": 0.85,
-      "f1-score": 0.8499516517808221,
-      "support": 360.0
+      "precision": 0.8279569892473119,
+      "recall": 0.8278688524590164,
+      "f1-score": 0.8278572868373312,
+      "support": 244.0
     }
   }
 }
